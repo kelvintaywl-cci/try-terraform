@@ -6,7 +6,8 @@ orbs:
 jobs:
   deploy:
     docker:
-      - image: circleci/node:12.17.0
+      # use next-gen
+      - image: cimg/node:12.17.0
     steps:
       - terraform/install:
           arch: amd64
